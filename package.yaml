@@ -1,0 +1,24 @@
+name:                hakyll-hacks
+version:             0.1.0.0
+github:              "pittma/hakyll-hacks"
+license:             BSD3
+author:              "dan pittman"
+maintainer:          "dan@dpitt.me"
+copyright:           "dan pittman"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            I run too many hakyll sites, this package collects the shared stuff.
+category:            Web
+description:         Please see the README on GitHub at <https://github.com/pittma/hakyll-hacks#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- hakyll
+- filepath
+- split
+
+library:
+  source-dirs: src

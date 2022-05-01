@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hakyll-hacks
+version:        0.1.0.0
+synopsis:       I run too many hakyll sites, this package collects the shared stuff.
+description:    Please see the README on GitHub at <https://github.com/pittma/hakyll-hacks#readme>
+category:       Web
+homepage:       https://github.com/pittma/hakyll-hacks#readme
+bug-reports:    https://github.com/pittma/hakyll-hacks/issues
+author:         dan pittman
+maintainer:     dan@dpitt.me
+copyright:      dan pittman
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/pittma/hakyll-hacks
+
+library
+  exposed-modules:
+      HakyllHacks
+  other-modules:
+      Paths_hakyll_hacks
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , filepath
+    , hakyll
+    , split
+  default-language: Haskell2010
