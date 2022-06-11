@@ -33,6 +33,7 @@ baseRules = do
   match "images/*" $ do
     route idRoute
     compile copyFileCompiler 
+  match "templates/*" $ compile templateCompiler
 
  -- | Loads the given identifier as a template with the given context.
 asTempWithDefault :: Identifier -> Context String -> Compiler (Item String)
